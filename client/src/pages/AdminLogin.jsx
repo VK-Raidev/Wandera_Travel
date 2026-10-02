@@ -22,7 +22,13 @@ function AdminLogin() {
       localStorage.setItem('adminToken', data.token)
       navigate('/admin', { replace: true })
     } catch (requestError) {
-      setError(requestError.response?.data?.error || 'Sign in failed. Please try again.')
+      if (requestError.response?.data?.error) {
+        setError(requestError.response.data.error)
+      } else if (requestError.request) {
+        setError('Cannot reach the admin server. Make sure the API is running on port 5000.')
+      } else {
+        setError('Unable to start sign in. Please try again.')
+      }
     } finally {
       setIsSubmitting(false)
     }

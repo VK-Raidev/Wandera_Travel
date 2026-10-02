@@ -62,6 +62,7 @@ function Footer() {
           <Link to="/about">Our story</Link>
           <Link to="/destinations">All destinations</Link>
           <Link to="/custom-trip">Build a custom trip</Link>
+          <Link to="/admin/login">Admin login</Link>
         </FooterLinkColumn>
         <FooterLinkColumn title="Domestic">
           {packageLinks.domestic.map((place) => <Link key={place.packageId} to={`/packages/${place.packageId}`}>{place.label}</Link>)}
