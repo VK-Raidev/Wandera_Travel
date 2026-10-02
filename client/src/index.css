@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'DM Sans', 'Trebuchet MS', sans-serif;
+  color: #172d26;
+  background: #f5f6f1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --ink: #172d26;
+  --green: #285c49;
+  --green-deep: #153b30;
+  --coral: #d66f4f;
+  --lime: #d6df85;
+  --paper: #f5f6f1;
+  --white: #fff;
+  --muted: #64766d;
+  --line: #dfe5dc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--ink);
+}
+
+#root {
+  min-height: 100vh;
+}
